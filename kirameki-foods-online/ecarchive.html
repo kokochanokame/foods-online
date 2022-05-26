@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kirameki foods online</title>
+  <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/063e65748e.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'qgs4tqt',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+  <script src="https://kit.fontawesome.com/063e65748e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <figure class="kirameki">
+          <img src="img/kirameki_foods_logo@2x.jpg" alt="">
+        </figure>
+        <figure class="online">
+          <img src="img/kirameki_foods_online@2x.png" alt="">
+        </figure>
+      </div>
+
+      <div class="search-wrap">
+        <form class="search-form" role="search">
+          <p class="icon-left sp-only">
+            <i class="fa-solid fa-angle-left"></i>
+          </p>
+          <input type="text" class="search-no" id="serch-text" placeholder="商品名・商品番号を入力">
+          <ul id="close-search" class="search-icon">
+            <li>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </li>
+            <li class="pc-only">
+              <i class="fa-solid fa-angle-down"></i>
+            </li>
+          </ul>
+        </form>
+      </div>
+      <ul class="header-items">
+        <li id="search" class="header-item sp-only">
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+      </li>
+
+        <li class="header-item">
+          <a href="#"><i class="fa-solid fa-cart-shopping"><span>カート</span></i></a>
+        </li>
+        <li class="header-item">
+          <a href="#"><i class="fa-solid fa-user-large"><span>ログイン</span></i></a>
+        </li>
+        <li class="header-item">
+          <a href="#"><i class="fa-solid fa-circle-exclamation"><span>サポート</span></i></a>
+        </li>
+        <li class="header-item navBtn sp-only">
+            <span></span>
+            <span></span>
+            <span></span>
+      </li>
+    </ul>
+    </div>
+</header>
+<main>
+  <div class="big-wrapper">
+    <div class="side-wrapper">
+      <nav class="gNav">
+        <div class="gNav-inner">
+          <ol class="pc-breadcrumb pc-only">
+            <li class="bread-top pc-only"><a href="#">TOP</a></li>
+            <li class="pc-only"><a href="#">オーガニック</a></li>
+          </ol>
+    <h3 class="gNav-title">カテゴリ</h3>
+    <hr class="line">
+    <div class="nav-items">
+      <div>
+        <h3 class="nav-item menu-title">オーガニック</h3>
+
+        <ul class="inner-items">
+          <li class="close"><i class="fa-solid fa-xmark"></i></li>
+          <li class="inner-item"><a href="#">全てのオーガニック<span>(51)</span></a></li>
+          <li class="inner-item"><a href="#">ブランドA(10)</a></li>
+          <li class="inner-item"><a href="#">ブランドB(15)</a></li>
+          <li class="inner-item"><a href="#">ブランドC(8)</a></li>
+          <li class="inner-item"><a href="#">ブランドD(12)</a></li>
+        </ul>
+        <h3 class="nav-item">フェアトレード</h3>
+
+        <h3 class="nav-item">マクロビオティック</h3>
+
+        <h3 class="nav-item">スーパーフード</h3>
+
+      </div>
+    </div>
+
+    <h3 class="gNav-title special">特集</h3>
+    <hr class="line">
+    <ul class="gNav-items">
+      <li class="gNav-item"><a href="#">新着商品</a></li>
+      <li class="gNav-item"><a href="#">セール</a></li>
+      <li class="gNav-item"><a href="#">限定商品</a></li>
+      <li class="gNav-item"><a href="#">産地直送</a></li>
+    </ul>
+    <div class="search-input">
+    <h3 class="gNav-title search-h3">価格から探す</h3>
+    <hr class="line">
+    <span class="price-line"></span>
+    <div class="price-box">
+      <input type="text"><span>円</span><span>～</span><input type="text"><span>円</span>
+    </div>
+  </div>
+ </div>
+ </nav>
+  <div class="banner pc-only ">
+    <figure class="pc-only banner-img animate__animated"><img src="img/banner_a@2x.jpg" alt="バナー画像"></figure>
+    <figure class="pc-only second-fig banner-img animate__animated"><img src="img/banner_b@2x.png" alt="バナー画像"></figure>
+  </div>
+</div>
+
+
+    <div class="content">
+    <section class="top inner-right">
+      <div class="container">
+      <ol class="sp-breadcrumb sp-only">
+        <li class="bread-top sp-only"><a href="#">TOP</a></li>
+        <li class="sp-only"><a href="#">オーガニック</a></li>
+      </ol>
+      <div class="top-header">
+        <h1 class="top-h1">オーガニック</h1>
+        <p class="top-sub">(全45件)</p>
+      </div>
+      <p class="top-desc">現在の絞り込み条件<span>条件なし</span></p>
+
+      <div class="top-box">
+        <p class="select-desc"><i class="fa-solid fa-magnifying-glass"></i>条件絞り込み</p>
+        <div class="change-box">
+          <label>表示切替</label>
+          <div class="change-innerBox">
+          <select><option value="">新着順</option> </select>
+        </div>
+      </div>
+        <ul class="second-box">
+          <li>
+              <label>在庫</label>
+              <div class="second-innerBox">
+
+                <select>
+                  <option value="">全て</option>
+                </select>
+              </div>
+
+          </li>
+          <li>
+            <label>件数</label>
+            <div class="second-innerBox">
+              <select>
+                <option value="">80件</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </section>
+    <div class="brand inner-right">
+      <div class="container">
+        <ul class="brand-items">
+          <li class="brand-item">
+          <figure><img src="img/ec__brand_1@2x.jpg" alt=""></figure>
+          <p class="brand-desc">ブランドA</p>
+          <p class="brand-name">ブルーベリー</p>
+          <p class="brand-price">￥5,250</p>
+        </li>
+        <li class="brand-item">
+          <figure><img src="img/ec__brand_2@2x.jpg" alt=""></figure>
+          <p class="brand-desc">ブランドB</p>
+          <p class="brand-name">スムージー</p>
+          <p class="brand-price">￥990</p>
+        </li>
+        <li class="brand-item">
+          <figure><img src="img/ec__brand_3@2x.jpg" alt=""></figure>
+          <p class="brand-desc">ブランドC</p>
+          <p class="brand-name">蜂蜜</p>
+          <p class="brand-price">￥12,705</p>
+        </li>
+        <li class="brand-item">
+          <figure><img src="img/ec__brand_4@2x.jpg" alt=""></figure>
+          <p class="brand-desc">ブランドD</p>
+          <p class="brand-name">抹茶シェイク</p>
+          <p class="brand-price">￥1,210</p>
+        </li>
+      </ul>
+      <ul class="brand-items">
+        <li class="brand-item sale">
+          <figure class="sale-label"><img src="img/ec__brand_1@2x.jpg" alt=""></figure>
+          <p class="brand-desc">ブランドA</p>
+          <p class="brand-name">ブルーベリー</p>
+          <p class="brand-sale-price">￥5,250<i class="fa-solid fa-arrow-right-long"></i><span>￥990</span></p>
+        </li>
+        <li class="brand-item">
+          <figure><img src="img/ec__brand_2@2x.jpg" alt=""></figure>
+          <p class="brand-desc">ブランドB</p>
+          <p class="brand-name">スムージー</p>
+          <p class="brand-price">￥990</p>
+        </li>
+        <li class="brand-item">
+          <figure><img src="img/ec__brand_3@2x.jpg" alt=""></figure>
+          <p class="brand-desc">ブランドC</p>
+          <p class="brand-name">蜂蜜</p>
+          <p class="brand-price">￥12,705</p>
+        </li>
+        <li class="brand-item">
+          <figure><img src="img/ec__brand_4@2x.jpg" alt=""></figure>
+          <p class="brand-desc">ブランドD</p>
+          <p class="brand-name">抹茶シェイク</p>
+          <p class="brand-price">￥1,210</p>
+        </li>
+      </ul>
+      <ul class="brand-items">
+        <li class="brand-item">
+          <figure><img src="img/ec__brand_1@2x.jpg" alt=""></figure>
+          <p class="brand-desc">ブランドA</p>
+          <p class="brand-name">ブルーベリー</p>
+          <p class="brand-price">￥5,250</p>
+        </li>
+        <li class="brand-item">
+
+          <figure><img src="img/ec__brand_2@2x.jpg" alt=""></figure>
+          <p class="brand-desc">ブランドB</p>
+          <p class="brand-name">スムージー</p>
+          <p class="brand-price">￥990</p>
+        </li>
+        <li class="brand-item">
+          <figure><img src="img/ec__brand_3@2x.jpg" alt=""></figure>
+          <p class="brand-desc">ブランドC</p>
+          <p class="brand-name">蜂蜜</p>
+          <p class="brand-price">￥12,705</p>
+        </li>
+        <li class="brand-item">
+          <figure><img src="img/ec__brand_4@2x.jpg" alt=""></figure>
+          <p class="brand-desc">ブランドD</p>
+          <p class="brand-name">抹茶シェイク</p>
+          <p class="brand-price">￥1,210</p>
+        </li>
+      </ul>
+      <ul class="brand-items">
+        <li class="brand-item">
+          <figure><img src="img/ec__brand_1@2x.jpg" alt=""></figure>
+          <p class="brand-desc">ブランドA</p>
+          <p class="brand-name">ブルーベリー</p>
+          <p class="brand-price">￥5,250</p>
+        </li>
+        <li class="brand-item">
+          <figure><img src="img/ec__brand_2@2x.jpg" alt=""></figure>
+          <p class="brand-desc">ブランドB</p>
+          <p class="brand-name">スムージー</p>
+          <p class="brand-price">￥990</p>
+        </li>
+        <li class="brand-item">
+          <figure><img src="img/ec__brand_3@2x.jpg" alt=""></figure>
+          <p class="brand-desc">ブランドC</p>
+          <p class="brand-name">蜂蜜</p>
+          <p class="brand-price">￥12,705</p>
+        </li>
+        <li class="brand-item">
+          <figure><img src="img/ec__brand_4@2x.jpg" alt=""></figure>
+          <p class="brand-desc">ブランドD</p>
+          <p class="brand-name">抹茶シェイク</p>
+          <p class="brand-price">￥1,210</p>
+        </li>
+      </ul>
+      <ul class="brand-items">
+        <li class="brand-item">
+          <figure><img src="img/ec__brand_1@2x.jpg" alt=""></figure>
+          <p class="brand-desc">ブランドA</p>
+          <p class="brand-name">ブルーベリー</p>
+          <p class="brand-price">￥5,250</p>
+        </li>
+        <li class="brand-item">
+          <figure><img src="img/ec__brand_2@2x.jpg" alt=""></figure>
+          <p class="brand-desc">ブランドB</p>
+          <p class="brand-name">スムージー</p>
+          <p class="brand-price">￥990</p>
+        </li>
+        <li class="brand-item">
+          <figure><img src="img/ec__brand_3@2x.jpg" alt=""></figure>
+          <p class="brand-desc">ブランドC</p>
+          <p class="brand-name">蜂蜜</p>
+          <p class="brand-price">￥12,705</p>
+        </li>
+        <li class="brand-item">
+          <figure><img src="img/ec__brand_4@2x.jpg" alt=""></figure>
+          <p class="brand-desc">ブランドD</p>
+          <p class="brand-name">抹茶シェイク</p>
+          <p class="brand-price">￥1,210</p>
+        </li>
+      </ul>
+      <div class="pagenation">
+        <ol>
+          <li><a class="current" href="">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li> <i class="fa-solid fa-angle-right"></i></li>
+        </ol>
+
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+    <div class="banner container sp-only">
+      <figure class="sp-only"><img src="img/banner_a@2x.jpg" alt="バナー画像"></figure>
+      <figure class="sp-only"><img src="img/banner_b@2x.png" alt="バナー画像"></figure>
+    </div>
+</main>
+  <footer>
+  <div class="footer-inner">
+    <p class="account">きらめきフーズ公式アカウント</p>
+    <ul class="sns">
+      <li><a href="#"><img src="img/twitter.png@2x.jpg" alt="twitter"></a></li>
+      <li><a href="#"><img src="img/insta.png@2x.jpg" alt="instagram"></a></li>
+      <li><a href="#"><img src="img/line.png@2x.jpg" alt="line"></a></li>
+      <li><a href="#"><img src="img/facebook.png@2x.png" alt="facebook"></a></li>
+    </ul>
+    <p class="contact">お問い合わせ</p>
+    <ul class="footer-item">
+      <li><a href="#">利用規約</a></li>
+      <li><a href="#">個人情報について</a></li>
+      <li><a href="#">Cookieの設定</a></li>
+      <li><a href="#">ソーシャルメディアポリシー</a></li>
+      <li><a href="#">サイトマップ</a></li>
+    </ul>
+    <p class="copy">&copy;2004-2021 Kirameki Foods Company, Limited All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.0.0/jquery.waypoints.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
